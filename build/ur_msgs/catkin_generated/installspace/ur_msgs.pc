@@ -1,0 +1,8 @@
+prefix=/home/swjtu20/catkin_ws/install
+
+Name: ur_msgs
+Description: Description of ur_msgs
+Version: 1.3.4
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs message_runtime std_msgs

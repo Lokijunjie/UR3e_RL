@@ -1,0 +1,8 @@
+prefix=/home/swjtu20/catkin_ws/devel
+
+Name: speed_scaling_state_controller
+Description: Description of speed_scaling_state_controller
+Version: 0.1.1
+Cflags: -I/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_scaled_controllers/speed_scaling_state_controller/include
+Libs: -L${prefix}/lib -lspeed_scaling_state_controller
+Requires: controller_interface pluginlib realtime_tools speed_scaling_interface std_msgs

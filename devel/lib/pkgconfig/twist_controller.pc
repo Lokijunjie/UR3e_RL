@@ -1,0 +1,8 @@
+prefix=/home/swjtu20/catkin_ws/devel
+
+Name: twist_controller
+Description: Description of twist_controller
+Version: 0.1.6
+Cflags: -I/home/swjtu20/catkin_ws/devel/include -I/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_controllers_cartesian/twist_controller/include
+Libs: -L${prefix}/lib -ltwist_controller
+Requires: controller_interface dynamic_reconfigure geometry_msgs hardware_interface realtime_tools roscpp pluginlib

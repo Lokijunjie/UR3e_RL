@@ -1,0 +1,8 @@
+prefix=/home/swjtu20/catkin_ws/install
+
+Name: scaled_joint_trajectory_controller
+Description: Description of scaled_joint_trajectory_controller
+Version: 0.1.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lscaled_joint_trajectory_controller
+Requires: controller_interface hardware_interface joint_trajectory_controller pluginlib realtime_tools std_msgs

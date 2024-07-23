@@ -1,0 +1,7 @@
+\subsubsection usage Usage
+\verbatim
+<node name="pass_through_controllers" pkg="pass_through_controllers" type="pass_through_controllers">
+  <param name="speed_scaling" type="double" value="1.0" />
+</node>
+\endverbatim
+

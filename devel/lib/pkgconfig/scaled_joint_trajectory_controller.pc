@@ -1,0 +1,8 @@
+prefix=/home/swjtu20/catkin_ws/devel
+
+Name: scaled_joint_trajectory_controller
+Description: Description of scaled_joint_trajectory_controller
+Version: 0.1.1
+Cflags: -I/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_scaled_controllers/scaled_joint_trajectory_controller/include
+Libs: -L${prefix}/lib -lscaled_joint_trajectory_controller
+Requires: controller_interface hardware_interface joint_trajectory_controller pluginlib realtime_tools std_msgs
