@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>pass_through_controllers</name>
+  <version>0.1.0</version>
+  <description>
+    Trajectory controllers (joint-based and Cartesian) that forward trajectories
+    directly to a robot controller and let it handle trajectory interpolation and execution.
+  </description>
+
+  <maintainer email="scherzin@fzi.de">Stefan Scherzinger</maintainer>
+  <maintainer email="exner@fzi.de">Felix Exner</maintainer>
+
+  <license>Apache-2.0</license>
+
+  <url type="website">http://wiki.ros.org/pass_through_controllers</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>actionlib</depend>
+  <depend>cartesian_control_msgs</depend>
+  <depend>cartesian_interface</depend>
+  <depend>cartesian_trajectory_controller</depend>
+  <depend>controller_interface</depend>
+  <depend>controller_manager</depend>
+  <depend>dynamic_reconfigure</depend>
+  <depend>geometry_msgs</depend>
+  <depend>hardware_interface</depend>
+  <depend>pluginlib</depend>
+  <depend>roscpp</depend>
+  <depend>speed_scaling_interface</depend>
+  <depend>trajectory_msgs</depend>
+
+  <build_depend>control_msgs</build_depend>
+  <build_export_depend>control_msgs</build_export_depend>
+
+  <test_depend>actionlib</test_depend>
+  <test_depend>actionlib_msgs</test_depend>
+  <test_depend>cartesian_trajectory_controller</test_depend>
+  <test_depend>control_msgs</test_depend>
+  <test_depend>controller_manager_msgs</test_depend>
+  <test_depend>joint_state_controller</test_depend>
+  <test_depend>joint_trajectory_controller</test_depend>
+  <test_depend>robot_state_publisher</test_depend>
+  <test_depend>ros_control_boilerplate</test_depend>
+  <test_depend>rospy</test_depend>
+  <test_depend>rostest</test_depend>
+  <test_depend>tf</test_depend>
+  <test_depend>xacro</test_depend>
+
+  <export>
+    <!-- Put the pass_through_controllers to the other ROS controllers.
+    To check if the export was successful, use
+    rospack plugins - -attrib=plugin controller_interface
+    -->
+    <controller_interface plugin="${prefix}/pass_through_controllers_plugin.xml"/>
+  </export>
+</package>
