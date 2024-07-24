@@ -77,8 +77,8 @@ ur_msgs/CMakeFiles/ur_msgs_generate_messages_nodejs: /home/swjtu20/catkin_ws/dev
 
 /home/swjtu20/catkin_ws/devel/share/gennodejs/ros/ur_msgs/msg/IOStates.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/swjtu20/catkin_ws/devel/share/gennodejs/ros/ur_msgs/msg/IOStates.js: /home/swjtu20/catkin_ws/src/ur_msgs/msg/IOStates.msg
-/home/swjtu20/catkin_ws/devel/share/gennodejs/ros/ur_msgs/msg/IOStates.js: /home/swjtu20/catkin_ws/src/ur_msgs/msg/Analog.msg
 /home/swjtu20/catkin_ws/devel/share/gennodejs/ros/ur_msgs/msg/IOStates.js: /home/swjtu20/catkin_ws/src/ur_msgs/msg/Digital.msg
+/home/swjtu20/catkin_ws/devel/share/gennodejs/ros/ur_msgs/msg/IOStates.js: /home/swjtu20/catkin_ws/src/ur_msgs/msg/Analog.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/swjtu20/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from ur_msgs/IOStates.msg"
 	cd /home/swjtu20/catkin_ws/build/ur_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/swjtu20/catkin_ws/src/ur_msgs/msg/IOStates.msg -Iur_msgs:/home/swjtu20/catkin_ws/src/ur_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p ur_msgs -o /home/swjtu20/catkin_ws/devel/share/gennodejs/ros/ur_msgs/msg
 

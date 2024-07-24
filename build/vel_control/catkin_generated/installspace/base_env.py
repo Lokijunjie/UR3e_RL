@@ -1,3 +1,5 @@
+import random
+import math
 from typing import Tuple, List, Dict
 import gymnasium as gym
 from gymnasium.spaces import Box
@@ -9,7 +11,8 @@ from control_msgs.msg import FollowJointTrajectoryAction, FollowJointTrajectoryG
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 import actionlib
 import tf
-
+import tf2_ros
+#初始关节角度
 INIT_POS = [0,-np.pi/2,0,-np.pi/2,0,0] 
 
 class BaseEnv(gym.Env):
@@ -39,48 +42,75 @@ class BaseEnv(gym.Env):
         self.observation_space = self._define_observation_space()
         self.action_space = Box(-1.0, 1.0, (7,))
 
+        # Target position range
+        self.target_x_range = (0.2, 0.4)
+        self.target_y_range = (-0.2, 0.2)
+        self.target_z_range = (0.4, 0.7)
+
+        self.reach_threshold = 0.01
+
+        # Target position in base_link frame
+        self.target_position = None
+
+         # Initialize TF listener
+        self.target_brodcast = tf2_ros.transform_broadcaster()
+        self.tf_listener = tf2_ros.TransformListener()
+
     def joint_states_callback(self, msg):
         self.current_joint_states = msg
 
     def _define_observation_space(self) -> Box:
         """
         Define/Get observation space.
-        Returns:
-            (Box) : defined observation space
         """
-        return Box(low=-np.inf, high=np.inf, shape=(14,), dtype=np.float32)
-
+        observation_space = Box(float("-inf"), float("inf"), (17,))
+        return observation_space
+    
     def get_obs(self) -> np.ndarray:
         """
         Get agent's observation.
+        The observation contains robot state and a relative position of target object
         Returns:
             (np.ndarray) : agent's observation
         """
-        robot_state = self.get_robot_state()
-        return np.array(robot_state)
+        obs = self.get_robot_state()
+        target_realtive_position = self.get_object_position_relative_to_base_link(
+            self.target
+        )
+        obs.extend(target_realtive_position)
+        return np.array(obs)
 
     def get_reward(self) -> float:
         """
-        Get reward for state/action.
-        We currently assume reward for state.
+        This reward function is based on the distance between target object and tip.
         Returns:
             (float) : reward
         """
-        raise NotImplementedError
+        distance_between_tip_and_target = self.get_distance_from_tip(
+            self.target.get_position()
+        )
+        return -math.log10(distance_between_tip_and_target / 10 + 1)
+
 
     def reset_objects(self):
         """
-        Reset objects in env. (ex. target_object)
+        Reset a target object.
         """
-        raise NotImplementedError
+        tfs = TransformStamped()
+        random_point_x = random.uniform(self.target_x_range[0], self.target_x_range[1])
+        random_point_y = random.uniform(self.target_y_range[0], self.target_y_range[1])
+        random_point_z = random.uniform(self.target_z_range[0], self.target_z_range[1])
+        self.target.set_position([random_point_x, random_point_y, random_point_z])
+
 
     def is_goal_state(self) -> bool:
         """
-        Whether the current state is a goal state or not.
-        Returns :
-            (bool) : if current state is a goal state, then return True
+        If the target object and the tip are close, it is considered as a goal state.
         """
-        raise NotImplementedError
+        distance_between_tip_and_target = self.get_distance_from_tip(
+            self.target.get_position()
+        )
+        return distance_between_tip_and_target <= self.reach_threshold
 
     def get_done_and_info(self) -> Tuple[bool, dict]:
         """
@@ -165,12 +195,19 @@ class BaseEnv(gym.Env):
         traj = JointTrajectory()
         traj.joint_names = self.arm_joint_names
         joint_states = rospy.wait_for_message("joint_states", JointState)
-        traj.points = [JointTrajectoryPoint(positions=joint_states.postion, velocities=[0.0]*6, time_from_start=rospy.Duration(1.0))]
+        
+        traj.points = [JointTrajectoryPoint()]
+        traj.points[0].velocities = arm_control
+        traj.points[0].time_from_start = rospy.Duration(0.002)
+        # 一阶速度积分得到位置
+        velocities = np.array(traj.points[0].velocities)
+        time_sec = traj.points[0].time_from_start.to_sec()
+        traj.points[0].positions = joint_states.position[:6] + velocities * time_sec
         
         self.joint_traj_pub.publish(traj)
         self.gripper_pub.publish(gripper_control)
 
-        rospy.sleep(1.0)  # 给ROS一些时间来执行命令
+        rospy.sleep(0.02)  # 给ROS一些时间来执行命令
 
         done, info = self.get_done_and_info()
         truncated = False  # 示例: 如果你的环境没有时间限制，可以设置为 False
@@ -208,8 +245,8 @@ class BaseEnv(gym.Env):
 
         arm_joint_positions = self.current_joint_states.position[:6]
         arm_joint_velocities = self.current_joint_states.velocity[:6]
-        gripper_position = self.current_joint_states.position[6]
-        gripper_velocity = self.current_joint_states.velocity[6]
+        gripper_position = self.current_joint_states.position[-1]
+        gripper_velocity = self.current_joint_states.velocity[-1]
         
         robot_state = list(arm_joint_positions)
         robot_state.extend(arm_joint_velocities)

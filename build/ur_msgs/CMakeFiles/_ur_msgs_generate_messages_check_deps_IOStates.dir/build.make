@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/swjtu20/catkin_ws/build
 include ur_msgs/CMakeFiles/_ur_msgs_generate_messages_check_deps_IOStates.dir/progress.make
 
 ur_msgs/CMakeFiles/_ur_msgs_generate_messages_check_deps_IOStates:
-	cd /home/swjtu20/catkin_ws/build/ur_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py ur_msgs /home/swjtu20/catkin_ws/src/ur_msgs/msg/IOStates.msg ur_msgs/Analog:ur_msgs/Digital
+	cd /home/swjtu20/catkin_ws/build/ur_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py ur_msgs /home/swjtu20/catkin_ws/src/ur_msgs/msg/IOStates.msg ur_msgs/Digital:ur_msgs/Analog
 
 _ur_msgs_generate_messages_check_deps_IOStates: ur_msgs/CMakeFiles/_ur_msgs_generate_messages_check_deps_IOStates
 _ur_msgs_generate_messages_check_deps_IOStates: ur_msgs/CMakeFiles/_ur_msgs_generate_messages_check_deps_IOStates.dir/build.make
