@@ -1,8 +1,0 @@
-prefix=/home/swjtu20/catkin_ws/install
-
-Name: vel_control
-Description: Description of vel_control
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

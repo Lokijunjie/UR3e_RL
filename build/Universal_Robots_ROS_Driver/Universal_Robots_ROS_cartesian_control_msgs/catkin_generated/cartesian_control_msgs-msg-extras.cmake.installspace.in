@@ -1,2 +1,0 @@
-set(cartesian_control_msgs_MESSAGE_FILES "msg/CartesianPosture.msg;msg/CartesianTolerance.msg;msg/CartesianTrajectory.msg;msg/CartesianTrajectoryPoint.msg;msg/FollowCartesianTrajectoryAction.msg;msg/FollowCartesianTrajectoryActionGoal.msg;msg/FollowCartesianTrajectoryActionResult.msg;msg/FollowCartesianTrajectoryActionFeedback.msg;msg/FollowCartesianTrajectoryGoal.msg;msg/FollowCartesianTrajectoryResult.msg;msg/FollowCartesianTrajectoryFeedback.msg")
-set(cartesian_control_msgs_SERVICE_FILES "")

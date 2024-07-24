@@ -1,8 +1,0 @@
-prefix=/home/swjtu20/catkin_ws/install
-
-Name: twist_controller
-Description: Description of twist_controller
-Version: 0.1.6
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -ltwist_controller
-Requires: controller_interface dynamic_reconfigure geometry_msgs hardware_interface realtime_tools roscpp pluginlib
