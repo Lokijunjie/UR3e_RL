@@ -12,7 +12,7 @@ from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 import actionlib
 import tf
 import tf2_ros
-from geometry_msgs.msg import TransformStamped
+from geometry_msgs.msg import TransformStamped, PointStamped
 
 
 #初始关节角度
@@ -26,7 +26,7 @@ class BaseEnv(gym.Env):
     def __init__(self):
         super().__init__()
         rospy.init_node('reach_env', anonymous=True)
-        
+
         self.joint_state_sub = rospy.Subscriber('/joint_states', JointState, self.joint_states_callback)
         self.joint_traj_pub = rospy.Publisher('/arm_controller/command', JointTrajectory, queue_size=10)
         
@@ -46,6 +46,7 @@ class BaseEnv(gym.Env):
         self.action_space = Box(-1.0, 1.0, (7,))
 
         # Target position range
+        self.target_pub = rospy.Publisher('/target_position', PointStamped, queue_size=10)
         self.target_x_range = (0.2, 0.4)
         self.target_y_range = (-0.2, 0.2)
         self.target_z_range = (0.4, 0.7)
@@ -101,7 +102,7 @@ class BaseEnv(gym.Env):
         """
         tfs = TransformStamped()
 
-        
+
         random_point_x = random.uniform(self.target_x_range[0], self.target_x_range[1])
         random_point_y = random.uniform(self.target_y_range[0], self.target_y_range[1])
         random_point_z = random.uniform(self.target_z_range[0], self.target_z_range[1])
