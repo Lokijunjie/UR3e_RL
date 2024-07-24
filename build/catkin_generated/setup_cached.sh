@@ -8,12 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/swjtu20/catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH='/home/swjtu20/catkin_ws/devel/lib:/usr/local/cuda/lib64:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu'
-<<<<<<< HEAD
+export LD_LIBRARY_PATH='/home/swjtu20/catkin_ws/devel/lib:/home/swjtu20/CoppeliaSim:/usr/local/cuda/lib64:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu:/home/swjtu20/CoppeliaSim'
 export PATH='/home/swjtu20/anaconda3/envs/ur3_rl/bin:/home/swjtu20/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin:/opt/ros/noetic/bin:/home/swjtu20/anaconda3/bin:/home/swjtu20/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/ros/noetic/bin:/home/swjtu20/anaconda3/bin:/home/swjtu20/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin:/opt/ros/noetic/bin:/home/swjtu20/anaconda3/bin:/home/swjtu20/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
-=======
-export PATH='/home/swjtu20/anaconda3/envs/ur3_rl/bin:/home/swjtu20/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
->>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 export PKG_CONFIG_PATH="/home/swjtu20/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/swjtu20/catkin_ws/build'
 export PYTHONPATH="/home/swjtu20/catkin_ws/devel/lib/python3/dist-packages:$PYTHONPATH"

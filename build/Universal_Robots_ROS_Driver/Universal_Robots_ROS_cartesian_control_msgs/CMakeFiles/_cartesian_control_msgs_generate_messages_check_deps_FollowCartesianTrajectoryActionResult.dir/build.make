@@ -54,11 +54,7 @@ CMAKE_BINARY_DIR = /home/swjtu20/catkin_ws/build
 include Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/CMakeFiles/_cartesian_control_msgs_generate_messages_check_deps_FollowCartesianTrajectoryActionResult.dir/progress.make
 
 Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/CMakeFiles/_cartesian_control_msgs_generate_messages_check_deps_FollowCartesianTrajectoryActionResult:
-<<<<<<< HEAD
-	cd /home/swjtu20/catkin_ws/build/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cartesian_control_msgs /home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg std_msgs/Header:cartesian_control_msgs/FollowCartesianTrajectoryResult:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID
-=======
-	cd /home/swjtu20/catkin_ws/build/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cartesian_control_msgs /home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg cartesian_control_msgs/FollowCartesianTrajectoryResult:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus
->>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
+	cd /home/swjtu20/catkin_ws/build/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py cartesian_control_msgs /home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg actionlib_msgs/GoalStatus:cartesian_control_msgs/FollowCartesianTrajectoryResult:std_msgs/Header:actionlib_msgs/GoalID
 
 _cartesian_control_msgs_generate_messages_check_deps_FollowCartesianTrajectoryActionResult: Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/CMakeFiles/_cartesian_control_msgs_generate_messages_check_deps_FollowCartesianTrajectoryActionResult
 _cartesian_control_msgs_generate_messages_check_deps_FollowCartesianTrajectoryActionResult: Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/CMakeFiles/_cartesian_control_msgs_generate_messages_check_deps_FollowCartesianTrajectoryActionResult.dir/build.make

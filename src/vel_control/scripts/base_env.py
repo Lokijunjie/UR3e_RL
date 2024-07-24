@@ -30,7 +30,7 @@ class BaseEnv(gym.Env):
         self.joint_state_sub = rospy.Subscriber('/joint_states', JointState, self.joint_states_callback)
         self.joint_traj_pub = rospy.Publisher('/arm_controller/command', JointTrajectory, queue_size=10)
         
-        self.arm_joint_names = ["joint1", "joint2", "joint3", "joint4", "joint5", "joint6"]
+        self.arm_joint_names = ["base_link", "joint2", "joint3", "joint4", "joint5", "joint6"]
         self.gripper_joint_name = "gripper_joint"
         self.gripper_pub = rospy.Publisher('/gripper_controller/command', Float64, queue_size=10)
         
@@ -78,9 +78,7 @@ class BaseEnv(gym.Env):
             (np.ndarray) : agent's observation
         """
         obs = self.get_robot_state()
-        target_realtive_position = self.get_object_position_relative_to_base_link(
-            self.target
-        )
+        target_realtive_position = [self.target.point.x, self.target.point.y, self.target.point.z]
         obs.extend(target_realtive_position)
         return np.array(obs)
 
@@ -100,13 +98,17 @@ class BaseEnv(gym.Env):
         """
         Reset a target object.
         """
-        tfs = TransformStamped()
-
-
-        random_point_x = random.uniform(self.target_x_range[0], self.target_x_range[1])
-        random_point_y = random.uniform(self.target_y_range[0], self.target_y_range[1])
-        random_point_z = random.uniform(self.target_z_range[0], self.target_z_range[1])
         
+        self.target = PointStamped()
+        self.target.header.frame_id = 'base_link'
+        self.target.header.stamp = rospy.Time.now()
+
+
+        self.target.point.x = random.uniform(self.target_x_range[0], self.target_x_range[1])
+        self.target.point.y = random.uniform(self.target_y_range[0], self.target_y_range[1])
+        self.target.point.z = random.uniform(self.target_z_range[0], self.target_z_range[1])
+        
+        self.target_pub.publish(self.target)
 
 
     def is_goal_state(self) -> bool:
@@ -204,16 +206,17 @@ class BaseEnv(gym.Env):
         
         traj.points = [JointTrajectoryPoint()]
         traj.points[0].velocities = arm_control
-        traj.points[0].time_from_start = rospy.Duration(0.002)
+        traj.points[0].time_from_start = rospy.Duration(0.05)
         # 一阶速度积分得到位置
         velocities = np.array(traj.points[0].velocities)
         time_sec = traj.points[0].time_from_start.to_sec()
         traj.points[0].positions = joint_states.position[:6] + velocities * time_sec
         
+        # 发布关节轨迹
         self.joint_traj_pub.publish(traj)
         self.gripper_pub.publish(gripper_control)
 
-        rospy.sleep(0.02)  # 给ROS一些时间来执行命令
+        rospy.sleep(0.05)  # 给ROS一些时间来执行命令
 
         done, info = self.get_done_and_info()
         truncated = False  # 示例: 如果你的环境没有时间限制，可以设置为 False
@@ -226,7 +229,7 @@ class BaseEnv(gym.Env):
         # 关闭环境时执行必要的清理操作
         pass
 
-    def get_distance_from_tip(self, object_position: np.ndarray) -> float:
+    def get_distance_from_tip(self) -> float:
         """
         Get distance between tip and target object
         Args:
@@ -235,7 +238,10 @@ class BaseEnv(gym.Env):
         Returns:
             (float): distance
         """
-        raise NotImplementedError
+        tfs = TransformStamped()
+        tfs.header.stamp = rospy.Time.now()
+        tfs.header.frame_id = 'base_link'
+        tfs.child_frame_id = 'target'
 
     def get_robot_state(self) -> List[float]:
         """
@@ -260,28 +266,5 @@ class BaseEnv(gym.Env):
         robot_state.append(gripper_velocity)
         return robot_state
 
-    def get_object_position_relative_to_base_link(self, target_object: np.ndarray) -> np.ndarray:
-        """
-        Get relative position of the target object to robot arm base link.
-        Args:
-            target_object (Object): target object
-
-        Returns:
-            (np.ndarray): position array containing x, y, z
-        """
-        raise NotImplementedError
-    
-    def get_distance_to_base_link(self, target_point):
-        try:
-            self.tf_listener.waitForTransform('/base_link', target_point.header.frame_id, rospy.Time(0), rospy.Duration(4.0))
-            base_link_to_target_point = self.tf_listener.transformPoint('/base_link', target_point)
-            
-            x = base_link_to_target_point.point.x
-            y = base_link_to_target_point.point.y
-            z = base_link_to_target_point.point.z
-
-            distance = np.sqrt(x**2 + y**2 + z**2)
-            return distance
-        except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
-            rospy.logerr("Transform lookup failed.")
-            return None
+   
+   
