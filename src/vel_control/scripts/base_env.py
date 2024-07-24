@@ -13,6 +13,7 @@ import actionlib
 import tf
 import tf2_ros
 from geometry_msgs.msg import TransformStamped, PointStamped
+from tf2_geometry_msgs import do_transform_point
 
 
 #初始关节角度
@@ -57,8 +58,8 @@ class BaseEnv(gym.Env):
         self.target_position = None
 
          # Initialize TF listener
-        self.target_brodcast = tf2_ros.transform_broadcaster()
-        self.tf_listener = tf2_ros.TransformListener()
+        self.tf_buffer = tf2_ros.Buffer()
+        self.tf_listener = tf2_ros.TransformListener(self.tf_buffer)
 
     def joint_states_callback(self, msg):
         self.current_joint_states = msg
@@ -115,9 +116,7 @@ class BaseEnv(gym.Env):
         """
         If the target object and the tip are close, it is considered as a goal state.
         """
-        distance_between_tip_and_target = self.get_distance_from_tip(
-            self.target.get_position()
-        )
+        distance_between_tip_and_target = self.get_distance_from_tip(self)
         return distance_between_tip_and_target <= self.reach_threshold
 
     def get_done_and_info(self) -> Tuple[bool, dict]:
@@ -238,10 +237,14 @@ class BaseEnv(gym.Env):
         Returns:
             (float): distance
         """
-        tfs = TransformStamped()
-        tfs.header.stamp = rospy.Time.now()
-        tfs.header.frame_id = 'base_link'
-        tfs.child_frame_id = 'target'
+        # 获取 base_link 到 wrist_3_link 的变换
+        transform = self.tf_buffer.lookup_transform('wrist_3_link', 'base_link', rospy.Time(0), rospy.Duration(1.0))
+
+        point_wrist_3_link = do_transform_point(self.target, transform)
+        distance = math.sqrt(
+            point_wrist_3_link.point.x ** 2 + point_wrist_3_link.point.y ** 2 + point_wrist_3_link.point.z ** 2
+        )
+        return distance
 
     def get_robot_state(self) -> List[float]:
         """
