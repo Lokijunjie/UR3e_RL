@@ -34,22 +34,38 @@ add_custom_target(_ur_dashboard_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeAction.msg" NAME_WE)
 add_custom_target(_ur_dashboard_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ur_dashboard_msgs" "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeAction.msg" "ur_dashboard_msgs/SetModeActionResult:actionlib_msgs/GoalStatus:ur_dashboard_msgs/SetModeResult:ur_dashboard_msgs/SetModeFeedback:ur_dashboard_msgs/SetModeActionGoal:ur_dashboard_msgs/RobotMode:std_msgs/Header:actionlib_msgs/GoalID:ur_dashboard_msgs/SetModeGoal:ur_dashboard_msgs/SetModeActionFeedback"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ur_dashboard_msgs" "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeAction.msg" "std_msgs/Header:ur_dashboard_msgs/SetModeActionGoal:ur_dashboard_msgs/SetModeActionResult:ur_dashboard_msgs/SetModeGoal:ur_dashboard_msgs/SetModeActionFeedback:ur_dashboard_msgs/SetModeResult:actionlib_msgs/GoalStatus:ur_dashboard_msgs/RobotMode:ur_dashboard_msgs/SetModeFeedback:actionlib_msgs/GoalID"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg" NAME_WE)
 add_custom_target(_ur_dashboard_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ur_dashboard_msgs" "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg" "actionlib_msgs/GoalID:ur_dashboard_msgs/RobotMode:ur_dashboard_msgs/SetModeGoal:std_msgs/Header"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ur_dashboard_msgs" "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg" "std_msgs/Header:ur_dashboard_msgs/RobotMode:actionlib_msgs/GoalID:ur_dashboard_msgs/SetModeGoal"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg" NAME_WE)
 add_custom_target(_ur_dashboard_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ur_dashboard_msgs" "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:ur_dashboard_msgs/SetModeResult:std_msgs/Header"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ur_dashboard_msgs" "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg" "actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus:ur_dashboard_msgs/SetModeResult"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg" NAME_WE)
 add_custom_target(_ur_dashboard_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ur_dashboard_msgs" "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:ur_dashboard_msgs/SetModeFeedback:std_msgs/Header"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ur_dashboard_msgs" "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg" "actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus:ur_dashboard_msgs/SetModeFeedback"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg" NAME_WE)
@@ -149,25 +165,41 @@ _generate_msg_cpp(ur_dashboard_msgs
 _generate_msg_cpp(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg"
+=======
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_cpp(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_cpp(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_cpp(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_cpp(ur_dashboard_msgs
@@ -342,25 +374,41 @@ _generate_msg_eus(ur_dashboard_msgs
 _generate_msg_eus(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg"
+=======
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_eus(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_eus(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_eus(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_eus(ur_dashboard_msgs
@@ -535,25 +583,41 @@ _generate_msg_lisp(ur_dashboard_msgs
 _generate_msg_lisp(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg"
+=======
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_lisp(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_lisp(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_lisp(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_lisp(ur_dashboard_msgs
@@ -728,25 +792,41 @@ _generate_msg_nodejs(ur_dashboard_msgs
 _generate_msg_nodejs(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg"
+=======
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_nodejs(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_nodejs(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_nodejs(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_nodejs(ur_dashboard_msgs
@@ -921,25 +1001,41 @@ _generate_msg_py(ur_dashboard_msgs
 _generate_msg_py(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg"
+=======
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_py(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/ur_dashboard_msgs/msg/RobotMode.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeGoal.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_py(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeResult.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_py(ur_dashboard_msgs
   "/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeFeedback.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ur_dashboard_msgs
 )
 _generate_msg_py(ur_dashboard_msgs

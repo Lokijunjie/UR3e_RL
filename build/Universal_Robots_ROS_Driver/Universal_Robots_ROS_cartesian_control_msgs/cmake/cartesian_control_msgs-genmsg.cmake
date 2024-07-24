@@ -24,42 +24,74 @@ add_custom_target(_cartesian_control_msgs_generate_messages_check_deps_${_filena
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg" NAME_WE)
 add_custom_target(_cartesian_control_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg" "geometry_msgs/Accel:geometry_msgs/Vector3:geometry_msgs/Twist"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg" "geometry_msgs/Twist:geometry_msgs/Accel:geometry_msgs/Vector3"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg" NAME_WE)
 add_custom_target(_cartesian_control_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg" "std_msgs/Header:geometry_msgs/Accel:geometry_msgs/Pose:geometry_msgs/Point:cartesian_control_msgs/CartesianPosture:cartesian_control_msgs/CartesianTrajectoryPoint:geometry_msgs/Vector3:geometry_msgs/Twist:geometry_msgs/Quaternion"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg" "geometry_msgs/Point:geometry_msgs/Twist:geometry_msgs/Quaternion:geometry_msgs/Accel:cartesian_control_msgs/CartesianTrajectoryPoint:cartesian_control_msgs/CartesianPosture:geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Pose"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg" NAME_WE)
 add_custom_target(_cartesian_control_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg" "geometry_msgs/Accel:geometry_msgs/Pose:geometry_msgs/Point:cartesian_control_msgs/CartesianPosture:geometry_msgs/Vector3:geometry_msgs/Twist:geometry_msgs/Quaternion"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg" "geometry_msgs/Point:geometry_msgs/Twist:geometry_msgs/Quaternion:geometry_msgs/Accel:cartesian_control_msgs/CartesianPosture:geometry_msgs/Vector3:geometry_msgs/Pose"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryAction.msg" NAME_WE)
 add_custom_target(_cartesian_control_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryAction.msg" "cartesian_control_msgs/FollowCartesianTrajectoryResult:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:geometry_msgs/Pose:std_msgs/Header:geometry_msgs/Accel:cartesian_control_msgs/FollowCartesianTrajectoryActionResult:cartesian_control_msgs/CartesianTolerance:geometry_msgs/Point:cartesian_control_msgs/FollowCartesianTrajectoryActionFeedback:cartesian_control_msgs/CartesianPosture:cartesian_control_msgs/CartesianTrajectory:geometry_msgs/Vector3:cartesian_control_msgs/FollowCartesianTrajectoryFeedback:cartesian_control_msgs/FollowCartesianTrajectoryGoal:cartesian_control_msgs/CartesianTrajectoryPoint:cartesian_control_msgs/FollowCartesianTrajectoryActionGoal:geometry_msgs/Twist:geometry_msgs/Quaternion"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryAction.msg" "geometry_msgs/Point:cartesian_control_msgs/FollowCartesianTrajectoryFeedback:cartesian_control_msgs/CartesianTrajectory:cartesian_control_msgs/FollowCartesianTrajectoryActionGoal:cartesian_control_msgs/FollowCartesianTrajectoryActionFeedback:geometry_msgs/Pose:actionlib_msgs/GoalID:cartesian_control_msgs/FollowCartesianTrajectoryActionResult:actionlib_msgs/GoalStatus:geometry_msgs/Quaternion:cartesian_control_msgs/FollowCartesianTrajectoryResult:geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Twist:geometry_msgs/Accel:cartesian_control_msgs/CartesianTolerance:cartesian_control_msgs/CartesianTrajectoryPoint:cartesian_control_msgs/FollowCartesianTrajectoryGoal:cartesian_control_msgs/CartesianPosture"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg" NAME_WE)
 add_custom_target(_cartesian_control_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg" "std_msgs/Header:geometry_msgs/Accel:cartesian_control_msgs/CartesianTolerance:cartesian_control_msgs/FollowCartesianTrajectoryGoal:geometry_msgs/Pose:geometry_msgs/Point:cartesian_control_msgs/CartesianPosture:cartesian_control_msgs/CartesianTrajectory:cartesian_control_msgs/CartesianTrajectoryPoint:geometry_msgs/Vector3:geometry_msgs/Twist:actionlib_msgs/GoalID:geometry_msgs/Quaternion"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg" "actionlib_msgs/GoalID:geometry_msgs/Point:geometry_msgs/Twist:geometry_msgs/Quaternion:geometry_msgs/Accel:cartesian_control_msgs/CartesianTolerance:cartesian_control_msgs/CartesianTrajectoryPoint:cartesian_control_msgs/FollowCartesianTrajectoryGoal:cartesian_control_msgs/CartesianTrajectory:cartesian_control_msgs/CartesianPosture:geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Pose"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg" NAME_WE)
 add_custom_target(_cartesian_control_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg" "std_msgs/Header:cartesian_control_msgs/FollowCartesianTrajectoryResult:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg" "cartesian_control_msgs/FollowCartesianTrajectoryResult:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg" NAME_WE)
 add_custom_target(_cartesian_control_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg" "std_msgs/Header:geometry_msgs/Accel:geometry_msgs/Pose:geometry_msgs/Point:cartesian_control_msgs/CartesianPosture:cartesian_control_msgs/CartesianTrajectoryPoint:geometry_msgs/Vector3:cartesian_control_msgs/FollowCartesianTrajectoryFeedback:geometry_msgs/Twist:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:geometry_msgs/Quaternion"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:geometry_msgs/Point:cartesian_control_msgs/FollowCartesianTrajectoryFeedback:geometry_msgs/Quaternion:geometry_msgs/Twist:geometry_msgs/Accel:cartesian_control_msgs/CartesianTrajectoryPoint:cartesian_control_msgs/CartesianPosture:geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Pose"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg" NAME_WE)
 add_custom_target(_cartesian_control_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg" "std_msgs/Header:geometry_msgs/Accel:cartesian_control_msgs/CartesianTolerance:geometry_msgs/Pose:geometry_msgs/Point:cartesian_control_msgs/CartesianPosture:cartesian_control_msgs/CartesianTrajectory:cartesian_control_msgs/CartesianTrajectoryPoint:geometry_msgs/Vector3:geometry_msgs/Twist:geometry_msgs/Quaternion"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg" "geometry_msgs/Point:geometry_msgs/Twist:geometry_msgs/Quaternion:geometry_msgs/Accel:cartesian_control_msgs/CartesianTolerance:cartesian_control_msgs/CartesianTrajectoryPoint:cartesian_control_msgs/CartesianTrajectory:cartesian_control_msgs/CartesianPosture:geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Pose"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg" NAME_WE)
@@ -69,7 +101,11 @@ add_custom_target(_cartesian_control_msgs_generate_messages_check_deps_${_filena
 
 get_filename_component(_filename "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg" NAME_WE)
 add_custom_target(_cartesian_control_msgs_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg" "std_msgs/Header:geometry_msgs/Accel:geometry_msgs/Pose:geometry_msgs/Point:cartesian_control_msgs/CartesianPosture:cartesian_control_msgs/CartesianTrajectoryPoint:geometry_msgs/Vector3:geometry_msgs/Twist:geometry_msgs/Quaternion"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cartesian_control_msgs" "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg" "geometry_msgs/Point:geometry_msgs/Twist:geometry_msgs/Quaternion:geometry_msgs/Accel:cartesian_control_msgs/CartesianTrajectoryPoint:cartesian_control_msgs/CartesianPosture:geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Pose"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 )
 
 #
@@ -87,49 +123,81 @@ _generate_msg_cpp(cartesian_control_msgs
 _generate_msg_cpp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_cpp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_cpp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_cpp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_cpp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_cpp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+=======
+  "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_cpp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_cpp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_cpp(cartesian_control_msgs
@@ -141,7 +209,11 @@ _generate_msg_cpp(cartesian_control_msgs
 _generate_msg_cpp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cartesian_control_msgs
 )
 
@@ -200,49 +272,81 @@ _generate_msg_eus(cartesian_control_msgs
 _generate_msg_eus(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_eus(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_eus(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_eus(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_eus(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_eus(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+=======
+  "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_eus(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_eus(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_eus(cartesian_control_msgs
@@ -254,7 +358,11 @@ _generate_msg_eus(cartesian_control_msgs
 _generate_msg_eus(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/cartesian_control_msgs
 )
 
@@ -313,49 +421,81 @@ _generate_msg_lisp(cartesian_control_msgs
 _generate_msg_lisp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_lisp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_lisp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_lisp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_lisp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_lisp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+=======
+  "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_lisp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_lisp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_lisp(cartesian_control_msgs
@@ -367,7 +507,11 @@ _generate_msg_lisp(cartesian_control_msgs
 _generate_msg_lisp(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cartesian_control_msgs
 )
 
@@ -426,49 +570,81 @@ _generate_msg_nodejs(cartesian_control_msgs
 _generate_msg_nodejs(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_nodejs(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_nodejs(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_nodejs(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_nodejs(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_nodejs(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+=======
+  "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_nodejs(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_nodejs(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_nodejs(cartesian_control_msgs
@@ -480,7 +656,11 @@ _generate_msg_nodejs(cartesian_control_msgs
 _generate_msg_nodejs(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/cartesian_control_msgs
 )
 
@@ -539,49 +719,81 @@ _generate_msg_py(cartesian_control_msgs
 _generate_msg_py(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_py(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_py(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_py(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryAction.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_py(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_py(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionResult.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+=======
+  "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryResult.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_py(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryActionFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_py(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryGoal.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTolerance.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectory.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cartesian_control_msgs
 )
 _generate_msg_py(cartesian_control_msgs
@@ -593,7 +805,11 @@ _generate_msg_py(cartesian_control_msgs
 _generate_msg_py(cartesian_control_msgs
   "/home/swjtu20/catkin_ws/devel/share/cartesian_control_msgs/msg/FollowCartesianTrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Accel.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianTrajectoryPoint.msg;/home/swjtu20/catkin_ws/src/Universal_Robots_ROS_Driver/Universal_Robots_ROS_cartesian_control_msgs/msg/CartesianPosture.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cartesian_control_msgs
 )
 

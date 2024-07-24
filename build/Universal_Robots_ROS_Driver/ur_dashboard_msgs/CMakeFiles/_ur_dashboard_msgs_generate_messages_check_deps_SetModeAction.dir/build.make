@@ -54,7 +54,11 @@ CMAKE_BINARY_DIR = /home/swjtu20/catkin_ws/build
 include Universal_Robots_ROS_Driver/ur_dashboard_msgs/CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SetModeAction.dir/progress.make
 
 Universal_Robots_ROS_Driver/ur_dashboard_msgs/CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SetModeAction:
+<<<<<<< HEAD
 	cd /home/swjtu20/catkin_ws/build/Universal_Robots_ROS_Driver/ur_dashboard_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py ur_dashboard_msgs /home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeAction.msg ur_dashboard_msgs/SetModeActionResult:actionlib_msgs/GoalStatus:ur_dashboard_msgs/SetModeResult:ur_dashboard_msgs/SetModeFeedback:ur_dashboard_msgs/SetModeActionGoal:ur_dashboard_msgs/RobotMode:std_msgs/Header:actionlib_msgs/GoalID:ur_dashboard_msgs/SetModeGoal:ur_dashboard_msgs/SetModeActionFeedback
+=======
+	cd /home/swjtu20/catkin_ws/build/Universal_Robots_ROS_Driver/ur_dashboard_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py ur_dashboard_msgs /home/swjtu20/catkin_ws/devel/share/ur_dashboard_msgs/msg/SetModeAction.msg std_msgs/Header:ur_dashboard_msgs/SetModeActionGoal:ur_dashboard_msgs/SetModeActionResult:ur_dashboard_msgs/SetModeGoal:ur_dashboard_msgs/SetModeActionFeedback:ur_dashboard_msgs/SetModeResult:actionlib_msgs/GoalStatus:ur_dashboard_msgs/RobotMode:ur_dashboard_msgs/SetModeFeedback:actionlib_msgs/GoalID
+>>>>>>> a3b31a1bf0d28ef5fc225bd9c6d8dd5dbc97df2f
 
 _ur_dashboard_msgs_generate_messages_check_deps_SetModeAction: Universal_Robots_ROS_Driver/ur_dashboard_msgs/CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SetModeAction
 _ur_dashboard_msgs_generate_messages_check_deps_SetModeAction: Universal_Robots_ROS_Driver/ur_dashboard_msgs/CMakeFiles/_ur_dashboard_msgs_generate_messages_check_deps_SetModeAction.dir/build.make
