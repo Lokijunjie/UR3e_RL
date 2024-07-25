@@ -55,8 +55,7 @@ def test():
     for _ in range(500):
         action, _states = model.predict(obs)
         obs, rewards, dones, info = env.step(action)
-        print(rewards)
-        env.render()
+        #print("rewards: ", rewards)
 
     env.close()
 

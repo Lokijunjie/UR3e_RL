@@ -15,7 +15,8 @@ import tf2_ros
 from geometry_msgs.msg import TransformStamped, PointStamped
 from tf2_geometry_msgs import do_transform_point
 
-
+JOINT_NAMES = ['shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint',
+               'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint']
 #初始关节角度
 INIT_POS = [0,-np.pi/2,0,-np.pi/2,0,0] 
 
@@ -31,7 +32,7 @@ class BaseEnv(gym.Env):
         self.joint_state_sub = rospy.Subscriber('/joint_states', JointState, self.joint_states_callback)
         self.client = actionlib.SimpleActionClient('/pos_joint_traj_controller/follow_joint_trajectory', FollowJointTrajectoryAction)
         
-        self.arm_joint_names = ["base_link", "joint2", "joint3", "joint4", "joint5", "joint6"]
+        self.arm_joint_names = JOINT_NAMES  #["base_link", "joint2", "joint3", "joint4", "joint5", "joint6"]
         self.gripper_joint_name = "gripper_joint"
         self.gripper_pub = rospy.Publisher('/gripper_controller/command', Float64, queue_size=10)
         
@@ -103,9 +104,13 @@ class BaseEnv(gym.Env):
         self.target.header.stamp = rospy.Time.now()
 
 
-        self.target.point.x = random.uniform(self.target_x_range[0], self.target_x_range[1])
-        self.target.point.y = random.uniform(self.target_y_range[0], self.target_y_range[1])
-        self.target.point.z = random.uniform(self.target_z_range[0], self.target_z_range[1])
+        # self.target.point.x = random.uniform(self.target_x_range[0], self.target_x_range[1])
+        # self.target.point.y = random.uniform(self.target_y_range[0], self.target_y_range[1])
+        # self.target.point.z = random.uniform(self.target_z_range[0], self.target_z_range[1])
+
+        self.target.point.x = 0.3
+        self.target.point.y = 0
+        self.target.point.z = 0.5
         
         self.target_pub.publish(self.target)
 
@@ -195,6 +200,7 @@ class BaseEnv(gym.Env):
         self.current_time_step += 1
 
         arm_control = action[:-1]
+        #print("arm_control", arm_control)
         gripper_control = 1.0 if action[-1] > 0.0 else 0.0
 
         # 发送关节轨迹
@@ -208,15 +214,15 @@ class BaseEnv(gym.Env):
         goal.trajectory.points[0].velocities = arm_control
         goal.trajectory.points[0].time_from_start = rospy.Duration(0.05)
         # 一阶速度积分得到位置
-        velocities = np.array(goal.trajectory.points[0].velocities)
+        velocities = np.array(goal.trajectory.points[0].velocities)*0.8
         time_sec = goal.trajectory.points[0].time_from_start.to_sec()
         goal.trajectory.points[0].positions = joint_states.position[:6] + velocities * time_sec
         
         # 发布关节轨迹
         self.client.send_goal(goal)
         self.client.wait_for_result()
-        self.gripper_pub.publish(gripper_control)
 
+        self.gripper_pub.publish(gripper_control)
         rospy.sleep(0.05)  # 给ROS一些时间来执行命令
 
         done, info = self.get_done_and_info()
@@ -246,6 +252,7 @@ class BaseEnv(gym.Env):
         distance = math.sqrt(
             point_wrist_3_link.point.x ** 2 + point_wrist_3_link.point.y ** 2 + point_wrist_3_link.point.z ** 2
         )
+        print("distance", distance)
         return distance
 
     def get_robot_state(self) -> List[float]:
