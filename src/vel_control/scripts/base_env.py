@@ -29,7 +29,7 @@ class BaseEnv(gym.Env):
         rospy.init_node('reach_env', anonymous=True)
 
         self.joint_state_sub = rospy.Subscriber('/joint_states', JointState, self.joint_states_callback)
-        self.joint_traj_pub = rospy.Publisher('/arm_controller/command', JointTrajectory, queue_size=10)
+        self.client = actionlib.SimpleActionClient('/pos_joint_traj_controller/follow_joint_trajectory', FollowJointTrajectoryAction)
         
         self.arm_joint_names = ["base_link", "joint2", "joint3", "joint4", "joint5", "joint6"]
         self.gripper_joint_name = "gripper_joint"
@@ -89,9 +89,7 @@ class BaseEnv(gym.Env):
         Returns:
             (float) : reward
         """
-        distance_between_tip_and_target = self.get_distance_from_tip(
-            self.target.get_position()
-        )
+        distance_between_tip_and_target = self.get_distance_from_tip()
         return -math.log10(distance_between_tip_and_target / 10 + 1)
 
 
@@ -116,7 +114,7 @@ class BaseEnv(gym.Env):
         """
         If the target object and the tip are close, it is considered as a goal state.
         """
-        distance_between_tip_and_target = self.get_distance_from_tip(self)
+        distance_between_tip_and_target = self.get_distance_from_tip()
         return distance_between_tip_and_target <= self.reach_threshold
 
     def get_done_and_info(self) -> Tuple[bool, dict]:
@@ -199,20 +197,24 @@ class BaseEnv(gym.Env):
         arm_control = action[:-1]
         gripper_control = 1.0 if action[-1] > 0.0 else 0.0
 
-        traj = JointTrajectory()
-        traj.joint_names = self.arm_joint_names
+        # 发送关节轨迹
+        goal = FollowJointTrajectoryGoal()
+        goal.trajectory = JointTrajectory()
+
+        goal.trajectory.joint_names = self.arm_joint_names
         joint_states = rospy.wait_for_message("joint_states", JointState)
         
-        traj.points = [JointTrajectoryPoint()]
-        traj.points[0].velocities = arm_control
-        traj.points[0].time_from_start = rospy.Duration(0.05)
+        goal.trajectory.points = [JointTrajectoryPoint()]
+        goal.trajectory.points[0].velocities = arm_control
+        goal.trajectory.points[0].time_from_start = rospy.Duration(0.05)
         # 一阶速度积分得到位置
-        velocities = np.array(traj.points[0].velocities)
-        time_sec = traj.points[0].time_from_start.to_sec()
-        traj.points[0].positions = joint_states.position[:6] + velocities * time_sec
+        velocities = np.array(goal.trajectory.points[0].velocities)
+        time_sec = goal.trajectory.points[0].time_from_start.to_sec()
+        goal.trajectory.points[0].positions = joint_states.position[:6] + velocities * time_sec
         
         # 发布关节轨迹
-        self.joint_traj_pub.publish(traj)
+        self.client.send_goal(goal)
+        self.client.wait_for_result()
         self.gripper_pub.publish(gripper_control)
 
         rospy.sleep(0.05)  # 给ROS一些时间来执行命令

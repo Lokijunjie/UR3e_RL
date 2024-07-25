@@ -169,6 +169,7 @@ include_directories(
 catkin_install_python(PROGRAMS 
   scripts/vel_control_test01.py
   scripts/base_env.py
+  scripts/test.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
